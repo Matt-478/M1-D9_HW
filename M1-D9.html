@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        BINGO CHALLENGE!!!
+        Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
+        Create a button to randomize a number from 1 to 76. The same number should be highlighted on the bingo board
+        EXTRA: 
+        - Take ALWAYS a new number (eg. avoid randoming the number 10 3 times)
+        - Create a USER BOARD with 24 randomized numbers that highlights as the main board does
+        - Let the user choose HOW MANY user boards he's willing to play with and create them.
+    -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    background-color: rgb(218, 209, 199);
+    color: rgb(32, 32, 32);
+  }
+
+  .board-box {
+    max-width: 800px;
+    margin: 0 auto;
+    height: fit-content;
+
+    background-color: rgb(207, 179, 185);
+  }
+
+  .board-cell-general {
+    display: inline-block;
+    width: 13%;
+    min-height: 64px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border-style: solid;
+    border-color: chocolate;
+    border-radius: 5px;
+    border-width: 8px;
+    margin: 3px;
+    padding-top: 32px; 
+  }
+</style>
+
+<body>
+  <script src="M1-D9.js"></script>
+
+  <div class="board-box">
+  </div>
+</body>
+</html>

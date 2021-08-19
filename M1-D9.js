@@ -15,6 +15,19 @@ const displayAllBingoCards = function() {
   }
 }
 
+// Create a button to randomize a number from 1 to 76.
+const randomizeNumber = function() {
+
+  let button = document.querySelector("button")
+
+  button.addEventListener("click", function() {
+    let randomNumber = Math.floor(Math.random() * 76) + 1 ;
+    return console.log(randomNumber)
+    // returns nothing on the first time and then adds two more on each press
+  });
+
+}
+
 
 window.onload = function() {
   displayAllBingoCards()
